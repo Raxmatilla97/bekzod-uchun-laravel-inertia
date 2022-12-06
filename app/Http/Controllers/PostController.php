@@ -13,6 +13,7 @@ class PostController extends Controller
     {
         $posts = Post::all();
         $posts = PostResource::collection($posts)->resolve();
+
         return inertia('Post/Index', compact('posts'));
     }
 

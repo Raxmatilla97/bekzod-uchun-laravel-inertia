@@ -27,9 +27,7 @@ defineProps({
             <template v-else>
                 <Link :href="route('login')" class="text-sm text-gray-700 dark:text-gray-500 underline"> Kirish</Link>
 
-                <Link :href="route('post.index')" class="ml-2 text-sm text-gray-700 dark:text-gray-500 underline">
-                    Postlar
-                </Link>
+
                 <Link
                     v-if="canRegister"
                     :href="route('register')"

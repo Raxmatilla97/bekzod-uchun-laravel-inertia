@@ -7,8 +7,19 @@
 
 <script>
 export default {
-    name: "MainLayout"
+  name: "index",
+  props: [
+    'posts'
+  ],
+  methods: {
+    deletePost(id) {
+      this.$inertia.delete(`/posts/${id}`)
+    }
+  }
 }
+
+
+
 </script>
 
 <style scoped>
